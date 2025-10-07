@@ -1,0 +1,22 @@
+/* CSS khusus untuk form input kasus */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #00b3b3;
+    box-shadow: 0 0 0 0.2rem rgba(0, 179, 179, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card-header {
+    font-weight: 600;
+    font-size: 1.2rem;
+}

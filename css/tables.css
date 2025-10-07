@@ -1,0 +1,124 @@
+/* CSS khusus untuk halaman KTA dan KTP */
+
+/* Stats card untuk mobile */
+.stats-card {
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.stats-card h5 {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.stats-card .fs-4 {
+    font-size: 1.5rem !important;
+}
+
+.stats-card:nth-child(1) {
+    background-color: #e3f2fd;
+}
+
+.stats-card:nth-child(2) {
+    background-color: #e8f5e9;
+}
+
+.stats-card:nth-child(3) {
+    background-color: #fff3e0;
+}
+
+/* Button Input Kasus */
+.btn-input-kasus {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-input-kasus:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Tabel Ringkasan */
+.table thead th {
+    font-weight: 600;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.table tbody td {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    cursor: pointer;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+    .stats-card {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .stats-card h5 {
+        font-size: 0.8rem;
+    }
+    
+    .stats-card .fs-4 {
+        font-size: 1.2rem !important;
+    }
+    
+    .btn-input-kasus {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .table thead th,
+    .table tbody td {
+        font-size: 0.7rem;
+        padding: 4px;
+    }
+    
+    /* Search bar di mobile */
+    .search-wrapper input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-card {
+        padding: 8px;
+    }
+    
+    .stats-card h5 {
+        font-size: 0.7rem;
+    }
+    
+    .stats-card .fs-4 {
+        font-size: 1rem !important;
+    }
+}
